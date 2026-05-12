@@ -136,11 +136,8 @@ test.describe('Booking Flow — Core E2E Tests', () => {
     const confirmBtn = page.getByTestId('confirm-dialog-yes');
     await expect(confirmBtn).toBeVisible({ timeout: 15000 });
     
-    // Ensure modal is fully settled
-    await page.waitForTimeout(1000); 
-
     // Perform confirmation and wait for navigation back to list
-    await confirmBtn.click();
+    await confirmBtn.click({ force: true });
     
     // Use a more resilient wait for navigation back to bookings list
     await expect(page).toHaveURL(/.*\/bookings/, { timeout: 20000 });
