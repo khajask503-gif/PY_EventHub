@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+.playwright-mcp/
+
+# Environment
+.env
+.env.local
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# System files
+Thumbs.db
+.DS_Store
