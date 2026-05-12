@@ -16,7 +16,7 @@ const USER_EMAIL    = process.env.USER_EMAIL;
 const USER_PASSWORD = process.env.USER_PASSWORD;
 
 if (!USER_EMAIL || !USER_PASSWORD) {
-  throw new Error('USER_EMAIL and USER_PASSWORD must be set in .env file');
+  throw new Error('USER_EMAIL and USER_PASSWORD must be set in .env file (local) or as GitHub Secrets (CI)');
 }
 
 // ── Helpers ────────────────────────────────────────────────────────────────────
