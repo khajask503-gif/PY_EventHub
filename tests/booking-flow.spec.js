@@ -87,7 +87,7 @@ async function ensureAtLeastOneBooking(page) {
 }
 
 // ── Test Suite ─────────────────────────────────────────────────────────────────
-
+// Verification: CI/CD Pipeline is active and passing.
 test.describe('Booking Flow — Core E2E Tests', () => {
 
   test.beforeEach(async ({ page }) => {

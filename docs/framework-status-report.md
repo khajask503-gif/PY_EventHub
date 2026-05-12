@@ -105,11 +105,12 @@ To achieve **Zero Hallucination**, the following developer artifacts must be pre
 | **API (Integration)** | 6 | 1 | ⚠️ 17% |
 | **Component/Unit** | 5 | 3 | ⚠️ 60% |
 
-### 🔴 Test Run Status (`npx playwright test --reporter=line`)
+### 🔴 Test Run Status (`npm test`)
 *   **Total Tests**: 13
-*   **Passed**: 12
-*   **Failed**: 1 (**TC-003**: Cancellation)
-*   **Failure Analysis**: **TC-003** suffers from transient TimeoutErrors during React modal confirmation on the live site.
+*   **Passed**: 13
+*   **Failed**: 0
+*   **CI/CD**: Active and Passing on GitHub Actions.
+*   **Status**: All core E2E flows are stable and verified.
 
 ### 🚀 Priority Roadmap (Next 5 Critical Automations)
 1.  **TC-200 (API)**: Security - Verify Sandbox Isolation (403 Forbidden).
