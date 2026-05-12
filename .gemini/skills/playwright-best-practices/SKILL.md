@@ -9,7 +9,7 @@ user-invocable: false
 ## Overview
 This document defines the testing standards, patterns, and best practices for writing Playwright E2E tests in the EventHub project. All test automation agents and code reviewers MUST follow these guidelines.
 
----
+-------
 
 ## 1. Project Test Setup
 
@@ -22,7 +22,7 @@ This document defines the testing standards, patterns, and best practices for wr
 - **Reporter**: HTML
 - **Screenshots**: Only on failure
 - **Video**: Retain on failure
-
+-----
 ### File Naming Convention
 - Test files: `tests/<feature-name>.spec.js`
 - Use descriptive kebab-case names: `booking-flow.spec.js`, `cross-user-booking.spec.js`
